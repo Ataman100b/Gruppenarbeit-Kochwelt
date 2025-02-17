@@ -13,13 +13,24 @@
 <body>
     
     
-<form name="contactForm" action="/submit_form" method="post" onsubmit="return validateForm()">
-  Nachricht: <input type="text" name="message" required>
+<form name="myForm" onsubmit="return validateForm()">
+  <label for="message">Name:</label><br>
+  <input type="text" name="Name" required placeholder="Vor- und Nachname"><br>
+  
+  <label for="message">E-Mail:</label><br>
+  <input type="text" id="E-mail" required placeholder="max@mustermann.com"><br>
+
+  <label for="telefon">Telefonnummer (Optional):</label><br>
+    <input type="number" id="telefon"  placeholder="01234 567890"><br>
+
+    <label for="message">Nachricht:</label><br>
+    <textarea name="message" required placeholder="Ihre Nachricht" style="height:200px"></textarea><br>
+   <br>
   <input type="submit" value="Absenden">
 </form>
 <script>
     function validateForm() {
-        var message = document.forms["myForm"]["message"].value;
+        var message = document.forms["contactForm"]["message"].value;
         if (message == "") {
             alert("Bitte schreiben Sie uns Ihre Nachricht");
             return false;

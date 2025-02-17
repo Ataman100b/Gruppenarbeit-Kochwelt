@@ -1,0 +1,33 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontakt</title>
+   
+</head>
+<body>
+    
+    
+<form name="contactForm" action="/submit_form" method="post" onsubmit="return validateForm()">
+  Nachricht: <input type="text" name="message" required>
+  <input type="submit" value="Absenden">
+</form>
+<script>
+    function validateForm() {
+        var message = document.forms["myForm"]["message"].value;
+        if (message == "") {
+            alert("Bitte schreiben Sie uns Ihre Nachricht");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+
+</html>
+</html>

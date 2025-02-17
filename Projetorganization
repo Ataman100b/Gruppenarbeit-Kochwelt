@@ -1,4 +1,10 @@
-SS
+Index und Html zusammen
+
+
+
+HTML
+
+CSS
 
 body 
      font family            
@@ -6,9 +12,14 @@ body
 .header
 .link
 .button   
-    cursor: pointer
 .image
 .bg-gray 
     background-color 
 
 .footer
+
+Javascript
+<input> <button> 
+
+
+
